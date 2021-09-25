@@ -1,7 +1,0 @@
-module.exports = {
-type: 'awaitedCommand',
-name: 'awaitclick',
-code: `
-$interactionReply[Hello;;;64]
-`
-};
