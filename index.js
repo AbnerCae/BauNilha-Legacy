@@ -6,4 +6,5 @@ token: process.env.TOKEN
 bot.variables({
 prefix: 'b/'
 });
-bot.onMessage()
+bot.onMessage();
+bot.loadCommands('./assets/commands/');
