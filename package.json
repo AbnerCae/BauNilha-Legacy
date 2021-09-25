@@ -7,11 +7,11 @@
       "start": "node index.js"
     },
     "engines": {
-      "node": "12.x"
+      "node": "16.10.0"
     },
     "author": "@R4l7Home",
     "license": "MIT License",
     "dependencies": {
-      "aoi.js": "^4.4.4"
+      "aoi.js": "^5.0.0"
     }
   }
