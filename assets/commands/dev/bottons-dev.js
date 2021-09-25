@@ -6,6 +6,7 @@ $let[id;$apiMessage[$channelID;hi;;{actionRow:click me,2,1,click};;yes]]
 `
 }, {
 type: 'awaitedCommand',
+name: 'awaitclick',
 code: `
 $interactionReply[Hello;;;64]
 `
