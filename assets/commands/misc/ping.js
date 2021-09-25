@@ -2,7 +2,7 @@ module.exports = {
 name: 'ping',
 aliases: ['latência'],
 code: `
-💻 Webhook: $ping
+💻 Websocket: $ping
 🗂️ Database: $dbPing
 `
 };
