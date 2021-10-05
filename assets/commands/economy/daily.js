@@ -1,6 +1,6 @@
 module.exports = {
 name: 'daily',
-aliases: ['diario', 'diário']
+aliases: ['diaria', 'diária'],
 code: `
 $reply[$messageID;💵 Você recebeu $random[15;100] zap zap tá moeto.]
 $setUserVar[money;$random[15;100]]
