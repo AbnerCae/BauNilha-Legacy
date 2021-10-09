@@ -1,11 +1,22 @@
 const aoijs = require('aoi.js');
 const bot = new aoijs.Bot({
-prefix: ['$getServerVar[prefix]'],
-token: process.env.TOKEN
+	autoUpdate: false,
+	databasePath: './assets/database/',
+	prefix: ['$getServerVar[prefix]'],
+	token: process.env.TOKEN
 });
 bot.variables({
-prefix: 'b/',
-money: '0'
+	prefix: 'b/',
+	money: '0'
 });
-bot.onMessage();
+bot.onMessage({
+	guildOnly: true
+});
 bot.loadCommands('./assets/commands/');
+
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
